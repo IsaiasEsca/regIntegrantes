@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.itsoeh.episaias.regintegrantes.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_autoRegistro"
+            app:destination="@id/autoRegistro" />
+        <action
+            android:id="@+id/action_login_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/autoRegistro"
+        android:name="com.itsoeh.episaias.regintegrantes.autoRegistro"
+        android:label="fragment_auto_registro"
+        tools:layout="@layout/fragment_auto_registro" />
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.itsoeh.episaias.regintegrantes.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_regAlumno"
+            app:destination="@id/regAlumno" />
+    </fragment>
+    <fragment
+        android:id="@+id/regAlumno"
+        android:name="com.itsoeh.episaias.regintegrantes.regAlumno"
+        android:label="fragment_reg_alumno"
+        tools:layout="@layout/fragment_reg_alumno" />
+    <fragment
+        android:id="@+id/regProyecto"
+        android:name="com.itsoeh.episaias.regintegrantes.regProyecto"
+        android:label="fragment_reg_proyecto"
+        tools:layout="@layout/fragment_reg_proyecto" />
+    <fragment
+        android:id="@+id/regIntegrantes"
+        android:name="com.itsoeh.episaias.regintegrantes.RegIntegrantes"
+        android:label="fragment_reg_integrantes"
+        tools:layout="@layout/fragment_reg_integrantes" />
+    <fragment
+        android:id="@+id/calificaciones"
+        android:name="com.itsoeh.episaias.regintegrantes.Calificaciones"
+        android:label="fragment_calificaciones"
+        tools:layout="@layout/fragment_calificaciones" />
+    <fragment
+        android:id="@+id/recuPerarContrasenia"
+        android:name="com.itsoeh.episaias.regintegrantes.recuPerarContrasenia"
+        android:label="fragment_recu_perar_contrasenia"
+        tools:layout="@layout/fragment_recu_perar_contrasenia" />
+</navigation>

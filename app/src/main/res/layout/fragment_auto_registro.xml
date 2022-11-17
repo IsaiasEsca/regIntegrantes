@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".autoRegistro">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:background="@drawable/degradado"
+        >
+        <ImageView
+            android:layout_width="224dp"
+            android:layout_height="78dp"
+            android:layout_gravity="left"
+            android:src="@drawable/iy" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    ></LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nues"
+            android:layout_gravity="center"
+            />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/Nom"
+            android:id="@+id/auRe_Nom"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/auRe_Matr"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:id="@+id/auRe_Matr"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/auRe_Apell"
+            android:layout_margin="10dp"
+            android:hint="@string/auRe_PM"/>
+
+        <EditText
+            android:id="@+id/reg_txtMtr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/principal_txtmatr"
+            android:minHeight="48dp"
+            app:errorEnabled="true" />
+
+
+        <EditText
+            android:id="@+id/reg_txtCorr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/reg_txtCorr"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/auR_btnGuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="@string/guarda"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".regAlumno"
+    android:background="@drawable/degradado"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:background="@drawable/degradado">
+            <ImageView
+                android:id="@+id/regHom1"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_home">
+            </ImageView>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="88dp"
+                android:layout_gravity="left"
+                android:src="@drawable/iy" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:textSize="30dp"
+    android:text="Registro de Integrantes"/>
+    </LinearLayout>
+        <EditText
+            android:id="@+id/reg_txtMtr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="number"
+            android:hint="Ingresa tu matricula"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/reg_txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minHeight="48dp"
+            android:hint="Ingresa tu Nombre"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/reg_txtApelliPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minHeight="48dp"
+            android:hint="Apellido Paterno"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/reg_txtApelliMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minHeight="48dp"
+            android:hint="Apellido Materno"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <EditText
+            android:id="@+id/reg_txtMateria1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minHeight="48dp"
+            android:hint="Ingresa la Materia"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Spinner
+            android:id="@+id/reg_txtGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/semestre"
+            android:layout_margin="20dp"
+            android:minHeight="48dp" ></Spinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sengundo Integrante"
+            android:textSize="20dp"
+            android:gravity="center"></TextView>
+/////////////////////////////////////////////////////////////
+        <EditText
+            android:id="@+id/reg_txtMtr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="number"
+            android:hint="Ingresa tu matricula"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/reg_txtNombre1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Ingresa tu nombre"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/reg_txtApelliPaterno1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Apellido Paterno"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/reg_txtApelliMaterno1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Apellido Materno"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/reg_txtMateria11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Imgresa la materia"
+            android:minHeight="48dp" />
+        <Spinner
+            android:id="@+id/reg_txtGrupo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/semestre"
+            android:layout_margin="20dp"
+
+            android:minHeight="48dp" ></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa tu grupo"
+            android:minHeight="20dp"></TextView>
+
+        <Button
+            android:id="@+id/btn_regIntegra1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/app_n"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:textStyle="italic"
+            android:backgroundTint="@color/teal_200"></Button>
+    </LinearLayout>
+</ScrollView>

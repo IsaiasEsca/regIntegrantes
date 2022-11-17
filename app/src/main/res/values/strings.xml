@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CPISIC Integrantes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reg_matricula">Email</string>
+    <string name="reg_contrsena">Contrasena</string>
+    <string name="login_btnentrar">Entrar</string>
+    <string name="tx">Registrate</string>
+    <string name="matricula">Ingresa tu matricula</string>
+    <string name="principal_txtmatr">Ingresa una contraseña</string>
+    <string name="principal_txtNombre">Ingresa tu nombre</string>
+    <string name="reg_txtApellidos">Apellido Paterno, Materno</string>
+    <string name="reg_txtContrase">Ingresa una contraseña</string>
+    <string name="reg_txtCorr">Ingresa tu correo Institucional</string>
+    <string name="guarda">Guardar</string>
+    <string name="rAlum">Registro de alumno</string>
+    <string name="rProyec">Registro de proyecto</string>
+    <string name="rInte">Registro de integrantes</string>
+    <string name="calf">Calificaciones</string>
+    <string name="app_n">Resgistro</string>
+    <string name="app_RecContr">Recuperar Contrsenia?</string>
+    <string name="reg_txtemail">\@itsoeh.edu.mx</string>
+    <string name="rec_eviar">Enviar</string>
+    <string name="app_na">Nombre del proyecto</string>
+    <string name="meet">Ingresa un Link de Meet</string>
+    <string name="Nom">Nombre: ....</string>
+    <string name="auRe_Matr">190......</string>
+    <string name="auRe_PM"><![CDATA[Apellido Paterno & Materno]]></string>
+    <string name="No">Ingrese el nombre del lider de equipo</string>
+    <string name="Noj">Lider de Equipo  </string>
+    <string name="app">Lider de Equipo Ej: Paterno Materno Nombre</string>
+
+</resources>

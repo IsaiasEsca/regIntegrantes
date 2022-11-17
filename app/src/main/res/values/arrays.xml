@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="semestre">
+        <item>Selecciona el semestre </item>
+        <item>1A</item>
+        <item>2B</item>
+        <item>3A</item>
+        <item>4B</item>
+        <item>5A</item>
+        <item>6A</item>
+        <item>7B</item>
+        <item>8A</item>
+        <item>9B</item>
+    </string-array>
+
+    <string-array name="categoria">
+        <item>Seleciona tu categoria</item>
+        <item>expo isic</item>
+        <item>Materia</item>
+    </string-array>
+</resources>

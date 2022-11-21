@@ -41,7 +41,8 @@ public class autoRegistro extends Fragment {
     TextView txtV_autoReg;
     EditText txtMatricula, txtCorreo, Nombre, Matricula, ApePateMater;
     DatabaseReference db;
-    String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+    String EMAIL_PATTERN = " [A-Za-z0-9]+@itsoeh.edu.mx";
+
     FirebaseDatabase database;
 
 
@@ -85,7 +86,7 @@ public class autoRegistro extends Fragment {
                 Toast.makeText(v.getContext(), "la matricula debe se de 8 Digitos", Toast.LENGTH_SHORT).show();
             }else{
 
-                if (validateEmail(correo)==false) {
+                if (validateEmail(correo)==true) {
                     txtCorreo.setError("Un email");
                     Toast.makeText(v.getContext(), "INGRESE UN EMAIL VALIDO", Toast.LENGTH_LONG).show();
                 }else{

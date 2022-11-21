@@ -71,7 +71,7 @@ public class regAlumno extends Fragment {
     }
 
     private void imaHome() {
-        NAV.navigate(R.id.menu);
+        NAV.navigate(R.id.menus);
 
     }
 

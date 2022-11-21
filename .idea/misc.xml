@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/drawable-v24/degradado.xml" value="0.103" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/drawable-v24/login_fondo_boton.xml" value="0.152" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_auto_registro.xml" value="0.24375" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_item_list_dialog_list_dialog.xml" value="0.24375" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_login.xml" value="0.24375" />
         <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_menu.xml" value="0.24375" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_menus.xml" value="0.21258134490238612" />
         <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_nuevo.xml" value="0.264" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_recu_perar_contrasenia.xml" value="0.24375" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_reg_alumno.xml" value="0.24375" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_reg_integrantes.xml" value="0.24375" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_reg_integrantes_ver2.xml" value="0.264" />
+        <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_reg_proyecto.xml" value="0.24375" />
         <entry key="..\:/Users/escam/AndroidStudioProjects/AndroidStudioProjects/regIntegrantes/app/src/main/res/layout/fragment_usuario__inicio.xml" value="0.24375" />
       </map>
     </option>

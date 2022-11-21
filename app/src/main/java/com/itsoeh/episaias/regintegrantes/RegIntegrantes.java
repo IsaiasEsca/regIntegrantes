@@ -74,7 +74,7 @@ public class RegIntegrantes extends Fragment {
     }
 
     private void imgHome1(View v) {
-        navControllerInte.navigate(R.id.menu);
+        navControllerInte.navigate(R.id.menus);
     }
 
     private void btnregIntegrantes(View v) {
@@ -99,7 +99,7 @@ public class RegIntegrantes extends Fragment {
             sp1.setSelection(0);
             db=FirebaseDatabase.getInstance().getReference("usuario/reg").child(inte.getMatricula()).child("integrantes");
            db.setValue(inte);
-            navControllerInte.navigate(R.id.menu);
+            navControllerInte.navigate(R.id.menus);
             Toast.makeText(v.getContext(), "Registro Exitoso", Toast.LENGTH_SHORT).show();
 
 

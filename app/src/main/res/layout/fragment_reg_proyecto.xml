@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".regAlumno"
-    android:background="@drawable/degradado"
+    android:background="@mipmap/login_fondoo"
     android:orientation="vertical"
     >
 
@@ -21,7 +21,7 @@
             android:layout_height="90dp"
             android:gravity="right"
             android:orientation="horizontal"
-            android:background="@drawable/degradado"
+
             >
 
             <ImageView
@@ -46,78 +46,121 @@
 
 
         </LinearLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registro de Proyecto"
-            android:textSize="30dp"
-            android:gravity="center"></EditText>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
-            android:layout_margin="20dp"
-            android:id="@+id/reg_liderEq"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/reg_IdProyecto"
-            android:layout_margin="20dp"
-            android:inputType="number"
-            android:hint="Ingresa Una Matricula registrada"
-            />
-
-        <EditText
-            android:id="@+id/reg_txtProyecto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:minHeight="48dp"
-            android:hint="Nombre del Proyecto"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-
-
-        <EditText
-            android:id="@+id/reg_txtLinkMeet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:minHeight="48dp"
-            android:hint="Ingresa link de tu Video"
-            android:inputType="textUri"
-            tools:ignore="SpeakableTextPresentCheck" />
-        <Spinner
-            android:id="@+id/reg_spCategoria"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:entries="@array/categoria"
-            android:minHeight="48dp" />
-
-        <Spinner
-            android:id="@+id/reg_spGrupos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/semestre"
-            android:layout_margin="20dp"
-
-            android:minHeight="48dp" ></Spinner>
-
-
-        <Button
-            android:id="@+id/btn_regProyecto"
+        
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:backgroundTint="@color/teal_200"
-            android:hint="@string/app_n"
-            android:textColor="@color/black"
-            android:textStyle="italic"></Button>
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de Proyecto"
+                android:textSize="30dp"
+                android:gravity="center"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Lider de Equipo ApePatreno Materno Nombre"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="341dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:id="@+id/reg_liderEq"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Ingresa Una Matricula"
+                android:textSize="15dp" />
+            <EditText
+                android:layout_width="341dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:id="@+id/reg_IdProyecto"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Nombre del Proyecto"
+                android:textSize="15dp" />
+
+
+
+            <EditText
+                android:id="@+id/reg_txtProyecto"
+                android:layout_width="341dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Ingresa el link del video"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/reg_txtLinkMeet"
+                android:layout_width="341dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                />
+            <Spinner
+                android:id="@+id/reg_spCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:entries="@array/categoria"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/reg_spGrupos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/semestre"
+                android:layout_margin="20dp"
+
+                android:minHeight="48dp" ></Spinner>
+
+
+            <Button
+                android:id="@+id/btn_regProyecto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:hint="@string/app_n"
+                android:textColor="@color/black"
+                android:textStyle="italic"></Button>
+
+        </LinearLayout>
+        
+
 
     </LinearLayout>
 

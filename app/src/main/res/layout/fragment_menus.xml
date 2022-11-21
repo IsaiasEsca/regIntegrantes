@@ -1,0 +1,80 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_fondoo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="60dp"
+            android:layout_height="78dp"
+            android:src="@drawable/ic_baseline_exit_to_app_24"></ImageView>
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="78dp"
+            android:layout_gravity="left"
+            android:src="@drawable/iy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
+            android:src="@mipmap/logo_isic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="¡Bienvenido!"
+            android:textAlignment="center"
+            android:textColor="#4d4c4c"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/inicio_imgBtnRegAlum"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:background="#0000"
+            android:src="@mipmap/registro_alumnos" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="#0000"
+            android:id="@+id/regPro"
+            android:src="@mipmap/registro_proyecto" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="#0000"
+            android:id="@+id/visualizarCal"
+            android:src="@mipmap/calificaciones" />
+
+        <ImageButton
+            android:id="@+id/inicio_imgBtnRegisInteg"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:background="#0000"
+            android:src="@mipmap/registro_integrantes" />
+
+    </LinearLayout>
+
+</ScrollView>

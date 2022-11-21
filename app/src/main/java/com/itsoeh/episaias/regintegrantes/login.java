@@ -149,7 +149,7 @@ public class login extends Fragment {
 
 
 
-                                            control.navigate(R.id.menu);
+                                            control.navigate(R.id.menus);
                                             Toast.makeText(v.getContext(), "Ingresaste satisfactoriamente", Toast.LENGTH_LONG).show();
                                         }
                                     }

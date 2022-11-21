@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -12,85 +11,72 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
-
-import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link menu#newInstance} factory method to
+ * Use the {@link menus#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class menu extends Fragment {
-    CardView cardregAlumno, cardIntegrantes, cardProyecto, cardCalificacion;
-    NavController navController;
-    ImageView imgClose;
+public class menus extends Fragment {
 
+    ImageButton btnRegIntegrantes,
+                btnRegProyectos,
+                btnViCalificaciones;
+    ImageView imgClose;
+    NavController nav;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        navController= Navigation.findNavController(view);
+        nav= Navigation.findNavController(view);
+        btnRegIntegrantes=view.findViewById(R.id.inicio_imgBtnRegisInteg);
+        btnRegProyectos=view.findViewById(R.id.regPro);
+        btnViCalificaciones=view.findViewById(R.id.visualizarCal);
         imgClose=view.findViewById(R.id.close);
+        btnRegIntegrantes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnRegIntegrante(view);
+            }
+        });
+        btnRegProyectos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnRegProyectos(view);
+            }
+        });
+        btnViCalificaciones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnViCalificacioness(view);
+            }
+        });
         imgClose.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-
-                imgCloses(v);
+            public void onClick(View view) {
+                close(view);
             }
         });
-        cardCalificacion=view.findViewById(R.id.cardCalififi);
-        cardCalificacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cardCalificacionsr(v);
-            }
-        });
-        cardProyecto=view.findViewById(R.id.proyectoresgis);
-        cardProyecto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cardProyectos(v);
-            }
-
-            private void cardProyectos(View v) {
-                navController.navigate(R.id.regProyecto);
-            }
-        });
-        cardregAlumno=view.findViewById(R.id.car_regAlumnoc);
-        cardIntegrantes=view.findViewById(R.id.regIntegrantes);
-        cardIntegrantes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cardReInte();
-            }
-        });
-        cardregAlumno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cardregAlumn();
-            }
-        });
-
     }
 
-    private void imgCloses(View v) {
-        FirebaseAuth.getInstance().signOut();
-        navController.navigate(R.id.login);
+    private void close(View view) {
+        nav.navigate(R.id.login);
     }
 
-    private void cardCalificacionsr(View v) {
-        navController.navigate(R.id.calificaciones);
+    private void btnViCalificacioness(View view) {
+        nav.navigate(R.id.calificaciones);
     }
 
-    private void cardReInte() {
-        navController.navigate(R.id.regIntegrantes);
+    private void btnRegProyectos(View view) {
+        nav.navigate(R.id.regProyecto);
     }
 
-    private void cardregAlumn() {
-        navController.navigate(R.id.regAlumno);
+    private void btnRegIntegrante(View view) {
+        nav.navigate(R.id.regIntegrantesVer2);
     }
 
     // TODO: Rename parameter arguments, choose names that match
@@ -102,7 +88,7 @@ public class menu extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public menu() {
+    public menus() {
         // Required empty public constructor
     }
 
@@ -112,11 +98,11 @@ public class menu extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment menu.
+     * @return A new instance of fragment menus.
      */
     // TODO: Rename and change types and number of parameters
-    public static menu newInstance(String param1, String param2) {
-        menu fragment = new menu();
+    public static menus newInstance(String param1, String param2) {
+        menus fragment = new menus();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -137,6 +123,6 @@ public class menu extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        return inflater.inflate(R.layout.fragment_menus, container, false);
     }
 }

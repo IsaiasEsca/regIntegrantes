@@ -69,7 +69,7 @@ if(datos!=null){
     }
 
     private void imgHomeProyectos(View v) {
-        navControllerPro.navigate(R.id.menu);
+        navControllerPro.navigate(R.id.menus);
     }
 
     private void btnRegProyectos(View v) {
@@ -89,7 +89,7 @@ if(datos!=null){
            db=FirebaseDatabase.getInstance().getReference("usuario/Proyecto").child(proyecto.getNomProyecto());
             db.setValue(proyecto);
              Toast.makeText(v.getContext(), "Registro exitoso!", Toast.LENGTH_SHORT).show();
-            navControllerPro.navigate(R.id.menu);
+            navControllerPro.navigate(R.id.menus);
         }
     }
 

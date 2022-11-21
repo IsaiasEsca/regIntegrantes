@@ -43,7 +43,7 @@ public class Calificaciones extends Fragment {
     }
 
     private void imgHomeCalificacionCali(View v) {
-        navControllerCalif.navigate(R.id.menu);
+        navControllerCalif.navigate(R.id.menus);
     }
 
     // TODO: Rename parameter arguments, choose names that match

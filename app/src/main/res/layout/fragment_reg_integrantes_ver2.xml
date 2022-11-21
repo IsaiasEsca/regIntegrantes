@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".regAlumno"
+    android:background="@mipmap/login_fondoo"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="right"
+
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/regHom1"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_home">
+            </ImageView>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="88dp"
+                android:layout_gravity="left"
+                android:src="@drawable/iy" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:text="Registro de Integrantes"/>
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="0dp"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Matricula"
+               android:textSize="15dp" />
+
+           <EditText
+               android:id="@+id/matricula"
+               android:layout_width="341dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:inputType="number" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante1 Nombre Completo (Nombre Ap Paterno Ap Materno)"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_Integrante1"
+               />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante1 Correo electrónico"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_CorrIntegrante1"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante2 Nombre Completo (Nombre Ap Paterno Ap Materno)"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_Integrante2"
+               />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante2 Correo electrónico"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_CorrIntegrante2"
+               />
+
+
+           *-
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante3 Nombre Completo (Nombre Ap Paterno Ap Materno)"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_Integrante3"
+               />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante3 Correo electrónico"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_CorrIntegrante3"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante4 Nombre Completo (Nombre Ap Paterno Ap Materno)"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_Integrante4"
+               />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Integrante4 Correo electrónico"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_CorrIntegrante4"
+               />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="23dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="sans-serif-black"
+               android:text="Ingresa el link del Video"
+               android:textSize="15dp" />
+
+           <EditText
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="5dp"
+               android:background="#fff"
+               android:id="@+id/reg_linkVideo"
+               />
+
+           <Spinner
+               android:id="@+id/reg_txtGrupo1"
+               android:layout_width="341dp"
+               android:layout_height="50dp"
+               android:entries="@array/semestre"
+               android:layout_marginTop="5dp"
+
+               android:minHeight="48dp" ></Spinner>
+
+       </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_regIntegra1"
+            android:hint="@string/app_n"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/login_fondo_boton"
+            app:backgroundTint="@null"
+            ></Button>
+    </LinearLayout>
+</ScrollView>

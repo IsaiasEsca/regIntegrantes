@@ -95,6 +95,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:490373955099:android:fd0a22e3db8b77d71f02be",
+        "android_client_info": {
+          "package_name": "com.itsoeh.episaias.consulta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490373955099-4ju6kncdg5o6skt84mg9pedj36u3h6ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLUtsWwasiiHitU2Ndt2SenQNroyMsFqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490373955099-4ju6kncdg5o6skt84mg9pedj36u3h6ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:490373955099:android:853cace01571485a1f02be",
         "android_client_info": {
           "package_name": "com.itsoeh.episaias.regintegrantes"
